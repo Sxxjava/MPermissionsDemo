@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IOCDemo.iml" filepath="$PROJECT_DIR$/IOCDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleDemo/SimpleDemo.iml" filepath="$PROJECT_DIR$/SimpleDemo/SimpleDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotation/annotation.iml" filepath="$PROJECT_DIR$/annotation/annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/compiler/compiler.iml" filepath="$PROJECT_DIR$/compiler/compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpermissions/mpermissions.iml" filepath="$PROJECT_DIR$/mpermissions/mpermissions.iml" />
+    </modules>
+  </component>
+</project>
