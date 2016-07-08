@@ -7,6 +7,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.0-alpha4'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+        classpath 'com.novoda:bintray-release:0.3.4'//添加
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -28,7 +29,7 @@ ext {
     groupId = 'com.szhynet.lib.mpermission'
     uploadName = 'MPermissions'
     publishVersion = '1.0.0'
-    desc = 'A easy API to use runtime permission for Android M '
-    website = 'https://github.com/hongyangAndroid/MPermissions'
+    desc = 'A easy API to use runtime permissions for Android M '
+    website = 'https://github.com/Sxxjava/MPermissionsDemo'
     licences = ['Apache-2.0']
 }
