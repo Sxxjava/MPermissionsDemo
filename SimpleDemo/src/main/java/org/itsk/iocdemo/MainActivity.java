@@ -55,31 +55,58 @@ public class MainActivity extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 
-    @PermissionDenied(value = {10,11})
+    @PermissionDenied(10)
     public void requestPermissionsDenied(int code){
-        switch (code){
-            case 10:
-                Toast.makeText(this, "访问SD卡权限以拒绝", Toast.LENGTH_SHORT).show();
-                break;
-            case 11:
-                Toast.makeText(this, "拨打电话权限以拒绝", Toast.LENGTH_SHORT).show();
-                break;
-        }
+        Toast.makeText(this, "访问SD卡权限以拒绝", Toast.LENGTH_SHORT).show();
+//        switch (code){
+//            case 10:
+//                Toast.makeText(this, "访问SD卡权限以拒绝", Toast.LENGTH_SHORT).show();
+//                break;
+//            case 11:
+//                Toast.makeText(this, "拨打电话权限以拒绝", Toast.LENGTH_SHORT).show();
+//                break;
+//        }
+    }
+    @PermissionDenied(11)
+    public void requestCallDenied(int code){
+        Toast.makeText(this, "拨打电话权限以拒绝", Toast.LENGTH_SHORT).show();
+//        switch (code){
+//            case 10:
+//                Toast.makeText(this, "访问SD卡权限以拒绝", Toast.LENGTH_SHORT).show();
+//                break;
+//            case 11:
+//                Toast.makeText(this, "拨打电话权限以拒绝", Toast.LENGTH_SHORT).show();
+//                break;
+//        }
     }
 
-    @PermissionGrant(value = {10,11})
+    @PermissionGrant(10)
     public void requestPermissionsGrant(int code){
-        switch (code){
-            case 10:
-                Toast.makeText(this, "访问SD卡权限以允许", Toast.LENGTH_SHORT).show();
-                break;
-            case 11:
-                Toast.makeText(this, "拨打电话权限以允许", Toast.LENGTH_SHORT).show();
-                break;
-        }
+        Toast.makeText(this, "访问SD卡权限以允许", Toast.LENGTH_SHORT).show();
+//        switch (code){
+//            case 10:
+//                Toast.makeText(this, "访问SD卡权限以允许", Toast.LENGTH_SHORT).show();
+//                break;
+//            case 11:
+//                Toast.makeText(this, "拨打电话权限以允许", Toast.LENGTH_SHORT).show();
+//                break;
+//        }
 
     }
-    @ShowRequestPermissionRationale(value = {10,11})
+    @PermissionGrant(11)
+    public void requestCallGrant(int code){
+        Toast.makeText(this, "拨打电话权限以允许", Toast.LENGTH_SHORT).show();
+//        switch (code){
+//            case 10:
+//                Toast.makeText(this, "访问SD卡权限以允许", Toast.LENGTH_SHORT).show();
+//                break;
+//            case 11:
+//                Toast.makeText(this, "拨打电话权限以允许", Toast.LENGTH_SHORT).show();
+//                break;
+//        }
+
+    }
+    @ShowRequestPermissionRationale({10,11})
     public void whyNeedPermissions(int code){
         switch (code){
             case 10:

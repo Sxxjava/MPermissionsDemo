@@ -31,10 +31,10 @@ dependencies {
 //    apt project(':compiler')
 
     apt files('libs/mpermission-compiler.jar')
-    compile files('libs/mpermission-annotation.jar')
+//    compile files('libs/mpermission-annotation.jar')
     compile files('libs/mpermission-api.jar')
 
-    //apt 'com.szhynet.lib.mpermission:compiler:1.0.0'
-    //compile 'com.szhynet.lib.mpermission:annotation:1.0.0'
-    //compile 'com.szhynet.lib.mpermission:lib-api:1.0.0'
+//    apt 'com.szhynet.lib.mpermission:compiler:1.0.0'
+//    compile 'com.szhynet.lib.mpermission:annotation:1.0.0'
+//    compile 'com.szhynet.lib.mpermission:lib-api:1.0.0'
 }
